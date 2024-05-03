@@ -1,8 +1,9 @@
+import "./style.css";
 import { List, Trigger, Root, Content } from "@radix-ui/react-tabs";
 export const FxTabs = () => {
   return (
-    <Root defaultValue="FoR">
-      <List aria-label="History of Ancient Rome">
+    <Root className={"tab"} defaultValue="FoR">
+      <List aria-label="History of Ancient Rome" >
         <Trigger value="FoR">Founding of Rome</Trigger>
         <Trigger value="MaR">Monarchy and Republic</Trigger>
         <Trigger value="Emp">Empire</Trigger>
